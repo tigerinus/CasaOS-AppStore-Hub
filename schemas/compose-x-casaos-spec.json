@@ -72,6 +72,9 @@
       "id": "#/definitions/service",
       "type": "object",
       "properties": {
+        "x-casaos": {
+          "$ref": "#/definitions/x-casaos"
+        },
         "deploy": {
           "$ref": "#/definitions/deployment"
         },
@@ -819,9 +822,6 @@
         }
       },
       "patternProperties": {
-        "^x-casaos": {
-          "$ref": "#/definitions/x-casaos"
-        },
         "^x-": {}
       },
       "additionalProperties": false
