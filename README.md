@@ -1,1 +1,1 @@
-# CasaOS-AppStore
+# CasaOS-AppStore-Hub
