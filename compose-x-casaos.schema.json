@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "title": "Compose Specification with CasaOS Extension",
+  "description": "The Compose file is a YAML file defining a multi-containers based application tailored for CasaOS",
+  "properties": {
+    "x-casaos": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lang": {
+                "type": "string",
+                "title": "Language",
+                "default": "en_US"
+              }
+            },
+            "required": [
+              "lang"
+            ]
+          },
+          "description": "App title to be displayed in different languages",
+          "title": "Title"
+        }
+      },
+      "title": "CasaOS extension",
+      "description": "Properties specific to CasaOS",
+      "required": [
+        "title"
+      ]
+    }
+  },
+  "required": [
+    "x-casaos"
+  ]
+}
